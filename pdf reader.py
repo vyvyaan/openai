@@ -21,7 +21,7 @@ import openai
 openai.api_key = 'openai key'
 
 # Use OpenAI to ask questions
-question = 'Where is he studying right now?'
+question = input("what do you want to know about the pdf?") 
 generated_text = openai.Completion.create(
     engine="text-davinci-002",
     prompt=f'Q: {question}\nText: {text}\nA:',
